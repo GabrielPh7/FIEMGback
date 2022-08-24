@@ -1,0 +1,31 @@
+{
+  "name": "api_basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:edevaldohbf/api_basic.git",
+  "author": "edevaldohbf <edevaldohbfilho@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "env $(cat .env) node src/index.js"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "ip": "^1.1.8",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
